@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="lib/fullpage/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+</head>
+<body>
+ <div class="container">
+      <!-- Everything below this is part of the menu-->
+    </div>
+    <div class="nav_button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Over mij</a></li>
+          <li><a href="#">Diensten</a></li>
+          <li><a href="#">Prijzen</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+<div id="fullpage">
+	<div class="section active" id="section0">
+        <div id = "home_container">
+            <div class = "content" id = "home_page_container_container">
+                <h1>Ik ben Anneline en ik ben jouw happy coach</h1>
+                <div class="button_container">
+                    <button>Diensten</button>
+                    <button>Boek een les in</button>
+                </div>
+            </div>
+            <div id="hero_image_container">
+            </div>
+        </div>
+    </div>
+	<div class="section" id="section1">
+        <h1>overview pagina</h1>
+	</div>
+	<div class="section" id="section2"><h1>diensten</h1></div>
+	<div class="section" id="section3"><h1>diensten toegelicht</h1></div>
+    <div class="section" id="section3"><h1>prijzen</h1></div>
+    <div class="section" id="section3"><h1>testimonials</h1></div>
+    <div class="section" id="section3"><h1>contact</h1></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/fullpage/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		
+	});
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+</script>
+</body>
+</html>

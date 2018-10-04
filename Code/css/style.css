@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,600');
+ h1
+ {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 74px;
+    font-weight: 600;
+    line-height: 80px;
+ }
+ #home_container
+ {
+     display: flex;
+     height: 100%;
+ }
+ .content
+ {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .button_container
+ {
+    display: inline;
+ }
+ #hero_image_container
+  {
+    background: -webkit-linear-gradient(top right, #ff3a74 0%, #fdec79 100%);
+    background: -o-linear-gradient(top right, #ff3a74 0%, #fdec79 100%);
+    background: linear-gradient(to bottom left, #ff3a74 0%, #fdec79 100%);
+    flex: 2;
+  }
+  #home_page_container_container
+  {
+    flex: 3;
+    justify-content: center;
+  }
+#home_page_container_container > h1, #home_page_container_container > div{
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+button {
+  border: 2px black solid;
+  color:#ff3a74;
+  background: transparent;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+button::before {
+  content: "";
+  background-color: #fdec79;
+  position: absolute;
+  top: 0.5rem;
+  height: 3.2rem;
+  left: 0.5rem;
+  width: 102%;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+button:hover {
+    cursor: pointer;
+}
+button:hover::before {
+  left: 0;
+  top: 0;
+}
