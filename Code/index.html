@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>fullPage.js A simple Demo</title>
+	<title>Happy moves</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage very simple demo." />
 	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
@@ -14,56 +14,204 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
 </head>
 <body>
- <div class="container">
-      <!-- Everything below this is part of the menu-->
-    </div>
+
     <div class="nav_button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
     <div class="overlay" id="overlay">
       <nav class="overlay-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Over mij</a></li>
-          <li><a href="#">Diensten</a></li>
-          <li><a href="#">Prijzen</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
+          <li data-menuanchor="home"><a href="#home">Home</a></li>
+          <li data-menuanchor="overMij"><a href="#overMij">Over mij</a></li>
+          <li data-menuanchor="diensten"><a href="#diensten">Diensten</a></li>
+          <li data-menuanchor="prijzen"><a href="#prijzen">Prijzen</a></li>
+          <li data-menuanchor="testimonials"><a href="#testimonials">Testimonials</a></li>
+          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
+
+
 <div id="fullpage">
 	<div class="section active" id="section0">
-        <div id = "home_container">
+        <div class="section_container">
             <div class = "content" id = "home_page_container_container">
-                <h1>Ik ben Anneline en ik ben jouw happy coach</h1>
+                <h1>Ik ben Anneline en ik ben jouw <span>happy</span> coach</h1>
                 <div class="button_container">
-                    <button>Diensten</button>
-                    <button>Boek een les in</button>
+                    <button class="btn_primary">Diensten</button><a href="#diensten" id = "services_anchor" style="display: none"></a>
+                    <button class="btn_secundary">Boek een les in</button><a href="#contact" id = "contact_anchor" style="display: none"></a>
                 </div>
+                <div class="scroll_down"></div>
             </div>
             <div id="hero_image_container">
             </div>
         </div>
     </div>
 	<div class="section" id="section1">
-        <h1>overview pagina</h1>
+        <div class="section_container" id = "overview_section">
+            <div class = "svg_wrapper">
+                <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     height="100%"viewBox="0 0 695 1118.563" style="enable-background:new 0 0 695 1118.563;"
+                    xml:space="preserve">
+                <image style="overflow:visible;" width="695" height="1017" xlink:href="img/polka.png"  transform="matrix(1 0 0 1 12 9)">
+                </image>
+                <image style="overflow:visible;" width="695" height="1017" xlink:href="img/polka.png"  transform="matrix(1 0 0 1 12 515)">
+                </image>
+                <image style="overflow:visible;" width="695" height="1017" xlink:href="img/overviewPageImage.png" >
+                </image>
+                <image style="overflow:visible;" width="695" height="1017" xlink:href="img/been.png"  transform="matrix(1 0 0 1 1 0)">
+                </image>
+                </svg>
+            </div>
+            <div class="content" id="overview_page_container">
+                <div id= "overview_header">
+                    <h1>Lorem.<br> Ipsum.<br> Dolor.</h1>
+                    <img src="img/overview_stripe.png"></img>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                </p>
+            </div>
+            <div id="instagram_CTA"><a href="https://www.instagram.com/annelineaarts/" target="_blank"><i>Neem ook eens een kijkje op mijn instagram</i></a><img src="img/instagram.png"></img></div>
+        </div>
 	</div>
-	<div class="section" id="section2"><h1>diensten</h1></div>
-	<div class="section" id="section3"><h1>diensten toegelicht</h1></div>
-    <div class="section" id="section3"><h1>prijzen</h1></div>
-    <div class="section" id="section3"><h1>testimonials</h1></div>
-    <div class="section" id="section3"><h1>contact</h1></div>
+	<div class="section" id="section2">
+        <div class="section_container" id = "overview_section">
+            <div class = "content" id = "services_page_container">
+                <div id="services_heading">
+                    <h1>Hier help ik jou mee</h1>
+                    <img src="img/marker_dot.png"></img>
+                </div>
+                <div id = "services_content_container">
+                    <div id="food_collumn">
+                        <img src="img/food.png"></img>
+                        <h2>Voeding</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis </p>
+                        <a href="#">lees meer</a>
+                    </div>
+                    <div id="yoga_collumn">
+                        <img src="img/yoga.png"></img>
+                        <h2>Yoga</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis </p>
+                        <a href="#">lees meer</a>
+                    </div>
+                    <div id="fitness_collumn">
+                        <img src="img/barbell.png"></img>
+                        <h2>Personal training</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis </p>
+                        <a href="#">lees meer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="section" id="section3">
+        <div class="section_container" id = "services_extension_section">
+            
+            <div id = "tabs_menu">
+                <ul id="services_tabs">
+                    <li class="active"><h2>Voeding</h2></li>
+                    <li><h2>Yoga</h2></li>
+                    <li><h2>Personal training</h2></li>
+                </ul>
+            </div>
+            <div id="tabs_content">
+                <p class ="active">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                </p>
+                <p class="">
+                    massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                </p>
+                <p class="">
+                    Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. 
+                </p>
+            </div>
+            <div class = "svg_wrapper">
+
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section4"><h1>prijzen</h1></div>
+    <div class="section" id="section5"><h1>testimonials</h1></div>
+    <div class="section" id="section6">
+        <div class="section_container" id = "contact_section">
+            <div class = "svg_wrapper">
+
+            </div>
+            <div class = "content" id = "contact_page_container">
+                <h1>contact</h1>
+                <img src="img/thunder_stripe.png">
+                
+                <form action="#">
+                    <label for="fname">Je naam*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Volledige naam">
+
+    	            <label for="fname">Telefoon nummer</label>
+                    <input type="text" id="fname" name="firstname" placeholder="">
+                    
+                    <label for="subject">......*</label>
+                    <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+                    <span>Velden met een * zijn verplicht</span>
+                    <button class="btn_primary" type="submit" value="submit">Verstuur</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <script type="text/javascript" src="lib/fullpage/fullpage.js"></script>
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
-		
+		anchors: ['home', 'overMij', 'diensten','diensten-meer','prijzen', 'testimonials', 'contact'],
+        onLeave: function(origin, destination, direction){
+            console.log(destination);
+            if(destination.anchor == "home")
+            {
+                $('.nav_button_container span').css("background", "#FFF");
+            }
+            else{
+                $('.nav_button_container span').css("background", "black");
+            }
+        }
 	});
     $('#toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
-  });
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+    $('.overlay-menu').click(function(){
+        $('#toggle').toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+    $("#instagram_CTA img").click(function(){
+        window.open("https://www.instagram.com/annelineaarts/", '_blank');
+    });
+    $(".scroll_down").click(function(){
+        myFullpage.moveSectionDown();
+    });
+    $("#home_page_container_container .btn_primary").click(function(){
+        $("#services_anchor")[0].click();
+    });
+    $("#home_page_container_container .btn_secundary").click(function(){
+        $("#contact_anchor")[0].click();
+    });
+    var tabs;
+    var contents;
+
+    tabs = document.querySelectorAll('#services_tabs li');
+    contents = document.querySelectorAll('#tabs_content p');
+
+    tabs.forEach(function(elem, i) {
+        elem.onclick = function() {
+            for ( let j = 0; j < tabs.length; j++ ) {
+                tabs[j].classList.remove('active');
+            }
+            this.classList.add('active');
+
+            for ( let j = 0; j < contents.length; j++ ) {
+                contents[j].classList.remove('active');
+            }
+            contents[i].classList.add('active');
+        }
+    });
 </script>
 </body>
 </html>
